@@ -61,14 +61,24 @@ const Contact: React.FC = () => {
               </p>
               
               <div className="space-y-4 font-mono text-xs text-mutedGray">
-                <div className="flex items-center gap-3">
+                <a 
+                  href="mailto:lintangzhade2525@gmail.com" 
+                  className="flex items-center gap-3 hover:text-cyanGlow transition-colors duration-300 w-fit"
+                  data-cursor="hover"
+                >
                   <Mail size={16} className="text-cyanGlow" />
                   <span>lintangzhade2525@gmail.com</span>
-                </div>
-                <div className="flex items-center gap-3">
+                </a>
+                <a 
+                  href="https://github.com/ZhadeLintang" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-3 hover:text-neonPurple transition-colors duration-300 w-fit"
+                  data-cursor="hover"
+                >
                   <Terminal size={16} className="text-neonPurple" />
                   <span>github.com/ZhadeLintang</span>
-                </div>
+                </a>
               </div>
             </div>
 
@@ -84,7 +94,7 @@ const Contact: React.FC = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/lintang-zhade-132746357/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-secondary/50 hover:text-secondary hover:shadow-neon-cyan hover:-translate-y-1 transition-all duration-300 flex-1 text-center flex justify-center"
@@ -93,7 +103,7 @@ const Contact: React.FC = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/tangling2525"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-accent/50 hover:text-accent hover:shadow-neon-pink hover:-translate-y-1 transition-all duration-300 flex-1 text-center flex justify-center"

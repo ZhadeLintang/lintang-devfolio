@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { ShieldCheck, Award, Zap, Code2 } from 'lucide-react';
+import { ShieldCheck, Award, Zap, Code2, Github, Instagram, Mail } from 'lucide-react';
 
 const About: React.FC = () => {
   const controls = useAnimation();
@@ -23,32 +23,9 @@ const About: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
-  const [experienceCount, setExperienceCount] = useState(0);
-  const [projectCount, setProjectCount] = useState(0);
-  const [clientCount, setClientCount] = useState(0);
-
   useEffect(() => {
     if (inView) {
       controls.start('visible');
-
-      // Increment stats counters smoothly
-      const duration = 2000;
-      const steps = 50;
-      const intervalTime = duration / steps;
-
-      let step = 0;
-      const timer = setInterval(() => {
-        step++;
-        setExperienceCount(Math.min(Math.floor((2 / steps) * step), 2)); // 2+ years
-        setProjectCount(Math.min(Math.floor((15 / steps) * step), 15)); // 15+ projects
-        setClientCount(Math.min(Math.floor((10 / steps) * step), 10)); // 10+ clients
-
-        if (step >= steps) {
-          clearInterval(timer);
-        }
-      }, intervalTime);
-
-      return () => clearInterval(timer);
     }
   }, [inView, controls]);
 
@@ -152,29 +129,48 @@ const About: React.FC = () => {
               animate={controls}
               className="grid grid-cols-3 gap-4"
             >
-              {/* Stat item 1 */}
-              <div className="glass-card p-4 border border-white/5 flex flex-col items-center justify-center text-center">
-                <span className="font-display text-2xl md:text-3xl font-black text-cyanGlow">
-                  {experienceCount}+
+              {/* Stat item 1 - GitHub */}
+              <a 
+                href="https://github.com/ZhadeLintang"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card p-4 border border-white/5 flex flex-col items-center justify-center text-center hover:border-cyanGlow/50 hover:shadow-neon-cyan transition-all duration-300 hover:-translate-y-1"
+                data-cursor="hover"
+              >
+                <Github size={20} className="text-cyanGlow mb-1.5" />
+                <span className="font-display text-xl md:text-2xl font-black text-cyanGlow">
+                  GIT
                 </span>
-                <span className="font-mono text-[9px] text-mutedGray tracking-wider uppercase mt-1">Yrs Exp</span>
-              </div>
+                <span className="font-mono text-[9px] text-mutedGray tracking-wider uppercase mt-1">GitHub</span>
+              </a>
 
-              {/* Stat item 2 */}
-              <div className="glass-card p-4 border border-white/5 flex flex-col items-center justify-center text-center">
-                <span className="font-display text-2xl md:text-3xl font-black text-neonPurple">
-                  {projectCount}+
+              {/* Stat item 2 - Instagram */}
+              <a 
+                href="https://www.instagram.com/tangling2525"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card p-4 border border-white/5 flex flex-col items-center justify-center text-center hover:border-neonPurple/50 hover:shadow-neon-purple transition-all duration-300 hover:-translate-y-1"
+                data-cursor="hover"
+              >
+                <Instagram size={20} className="text-neonPurple mb-1.5" />
+                <span className="font-display text-xl md:text-2xl font-black text-neonPurple">
+                  INST
                 </span>
-                <span className="font-mono text-[9px] text-mutedGray tracking-wider uppercase mt-1">Projects</span>
-              </div>
+                <span className="font-mono text-[9px] text-mutedGray tracking-wider uppercase mt-1">Instagram</span>
+              </a>
 
-              {/* Stat item 3 */}
-              <div className="glass-card p-4 border border-white/5 flex flex-col items-center justify-center text-center">
-                <span className="font-display text-2xl md:text-3xl font-black text-accent">
-                  {clientCount}+
+              {/* Stat item 3 - Email */}
+              <a 
+                href="mailto:lintangzhade2525@gmail.com"
+                className="glass-card p-4 border border-white/5 flex flex-col items-center justify-center text-center hover:border-accent/50 hover:shadow-neon-pink transition-all duration-300 hover:-translate-y-1"
+                data-cursor="hover"
+              >
+                <Mail size={20} className="text-accent mb-1.5" />
+                <span className="font-display text-xl md:text-2xl font-black text-accent">
+                  MAIL
                 </span>
-                <span className="font-mono text-[9px] text-mutedGray tracking-wider uppercase mt-1">Clients</span>
-              </div>
+                <span className="font-mono text-[9px] text-mutedGray tracking-wider uppercase mt-1">Email</span>
+              </a>
             </motion.div>
 
           </div>

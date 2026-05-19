@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Cpu, Code2, Database, Layout, PenTool, Sparkles, Terminal } from 'lucide-react';
+import { ShieldCheck, Cpu, Code2, Database, Layout, PenTool, Sparkles, Terminal, Smartphone, Code, Paintbrush, Server } from 'lucide-react';
 
 interface TechItem {
   name: string;
@@ -23,32 +23,32 @@ const TechStack: React.FC = () => {
     },
     { 
       name: 'Tailwind CSS', 
-      category: 'Language', 
-      icon: <Code2 size={24} />, 
+      category: 'Styling', 
+      icon: <Paintbrush size={24} />, 
       color: 'text-secondary border-secondary/20', 
       glowClass: 'hover:border-secondary/50 hover:shadow-neon-cyan',
       level: 100
     },
     { 
       name: 'Laravel', 
-      category: 'Styling', 
-      icon: <Cpu size={24} />, 
+      category: 'Backend', 
+      icon: <Server size={24} />, 
       color: 'text-cyanGlow border-cyanGlow/20', 
       glowClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan',
       level: 95
     },
     { 
-      name: 'Node.js', 
-      category: 'Backend', 
-      icon: <Terminal size={24} />, 
-      color: 'text-neonPurple border-neonPurple/20', 
-      glowClass: 'hover:border-neonPurple/50 hover:shadow-neon-purple',
+      name: 'Dart', 
+      category: 'Programing Language', 
+      icon: <Code size={24} />, 
+      color: 'text-blueGlow border-blueGlow/20', 
+      glowClass: 'hover:border-blueGlow/50 hover:shadow-blueGlow',
       level: 85
     },
     { 
       name: 'PHP Native', 
       category: 'Backend', 
-      icon: <Database size={24} />, 
+      icon: <Server size={24} />, 
       color: 'text-neonPurple border-neonPurple/20', 
       glowClass: 'hover:border-neonPurple/50 hover:shadow-neon-purple',
       level: 90
@@ -71,17 +71,49 @@ const TechStack: React.FC = () => {
     },
     { 
       name: 'Android Studio', 
-      category: 'Animation', 
-      icon: <Sparkles size={24} />, 
+      category: 'Mobile Development', 
+      icon: <Cpu size={24} />, 
       color: 'text-cyanGlow border-cyanGlow/20', 
       glowClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan',
       level: 80
+    },
+    {
+      name: 'HTML & CSS',
+      category: 'Frontend',
+      icon: <Code2 size={24} />,
+      color: 'text-cyanGlow border-cyanGlow/20',
+      glowClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan',
+      level: 95
+    },
+    {
+      name: 'MySQL',
+      category: 'Database',
+      icon: <Database size={24} />,
+      color: 'text-cyanGlow border-cyanGlow/20',
+      glowClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan',
+      level: 90
+    },
+    {
+      name: 'Java Script',
+      category: 'Programing Language',
+      icon: <Code2 size={24} />,
+      color: 'text-cyanGlow border-cyanGlow/20',
+      glowClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan',
+      level: 90
+    },
+    {
+      name: 'Flutter',
+      category: 'Mobile Development',
+      icon: <Smartphone size={24} />,
+      color: 'text-blueGlow border-blueGlow/20',
+      glowClass: 'hover:border-blueGlow/50 hover:shadow-neon-blue',
+      level: 90
     },
   ];
 
   return (
     <section 
-      id="stack" 
+      id="skills" 
       className="py-32 px-6 bg-pitchBlack relative overflow-hidden"
     >
       {/* Decorative grids */}
@@ -98,7 +130,7 @@ const TechStack: React.FC = () => {
             [// RUNNING COMPILATION SCHEMA...]
           </span>
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-softWhite uppercase">
-            TECH <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonPurple to-accent">STACK</span>
+            CORE <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonPurple to-accent">SKILLS</span>
           </h2>
         </div>
 
@@ -159,7 +191,7 @@ const TechStack: React.FC = () => {
             <span>⚡ CLOUD INFRASTRUCTURE WITH SUPABASE</span>
             <span>⚡ PURE NEO BRUTALISM GLASS SHADERS</span>
             <span>⚡ STATE-OF-THE-ART FRONTEND DESIGNS 2026</span>
-            <span>⚡ COMPRESSING CORE STACKS</span>
+            <span>⚡ COMPRESSING CORE SKILLS</span>
             <span>⚡ REACT & TYPESCRIPT ULTRA-ENGINE</span>
           </div>
         </div>

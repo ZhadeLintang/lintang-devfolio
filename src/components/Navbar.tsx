@@ -21,10 +21,10 @@ const Navbar: React.FC = () => {
   const navItems = [
     { label: '// HOME', href: '#home' },
     { label: '// ABOUT', href: '#about' },
-    { label: '// STACK', href: '#stack' },
+    { label: '// SKILLS', href: '#skills' },
     { label: '// PROJECTS', href: '#projects' },
-    { label: '// EXPERIENCE', href: '#experience' },
-    { label: '// SERVICES', href: '#services' },
+    { label: '// EDUCATION', href: '#education' },
+    { label: '// SOFTWARE SKILLS', href: '#software-skills' },
     { label: '// CONTACT', href: '#contact' },
   ];
 
@@ -129,10 +129,10 @@ const Navbar: React.FC = () => {
                 <a href="https://github.com/ZhadeLintang" target="_blank" rel="noopener noreferrer" className="hover:text-cyanGlow transition-colors">
                   <Github size={20} />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-neonPurple transition-colors">
+                <a href="https://www.instagram.com/tangling2525" target="_blank" rel="noopener noreferrer" className="hover:text-neonPurple transition-colors">
                   <Instagram size={20} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyanGlow transition-colors">
+                <a href="https://www.linkedin.com/in/lintang-zhade-132746357/" target="_blank" rel="noopener noreferrer" className="hover:text-cyanGlow transition-colors">
                   <Linkedin size={20} />
                 </a>
                 <a href="mailto:lintangzhade2525@gmail.com" className="hover:text-neonPurple transition-colors">

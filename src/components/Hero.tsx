@@ -69,12 +69,12 @@ const Hero: React.FC = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="relative max-w-4xl"
         >
-          <h1 className="text-6xl sm:text-7xl md:text-9xl font-black tracking-tighter mb-4 text-softWhite leading-[0.9]">
-            LINTANG
+          <h1 className="text-6xl sm:text-7xl md:text-9xl font-black tracking-tighter mb-4 text-softWhite leading-[0.9] uppercase">
+            I'M LABIB
           </h1>
           {/* Cyber Neon Stroke Header */}
-          <h2 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter mb-8 text-transparent bg-clip-text bg-gradient-to-r from-cyanGlow via-neonPurple to-accent" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.05)' }}>
-            HABIBIE
+          <h2 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter mb-8 text-transparent bg-clip-text bg-gradient-to-r from-cyanGlow via-neonPurple to-accent uppercase" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.05)' }}>
+            LINTANG
           </h2>
         </motion.div>
 
@@ -137,7 +137,7 @@ const Hero: React.FC = () => {
             <Github size={20} />
           </a>
           <a 
-            href="https://instagram.com" 
+            href="https://www.instagram.com/tangling2525" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="hover:text-neonPurple hover:-translate-y-1 transition-all duration-300"
@@ -146,7 +146,7 @@ const Hero: React.FC = () => {
             <Instagram size={20} />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/lintang-zhade-132746357/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="hover:text-cyanGlow hover:-translate-y-1 transition-all duration-300"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { LayoutGrid, Cpu, PenTool, ArrowUpRight } from 'lucide-react';
+import { LayoutGrid, Cpu, PenTool, ArrowUpRight, Terminal, Smartphone, Sparkles, GitBranch, Server } from 'lucide-react';
 
 interface Service {
   icon: React.ReactNode;
@@ -13,31 +13,54 @@ interface Service {
 const Services: React.FC = () => {
   const services: Service[] = [
     {
-      icon: <Cpu size={26} />,
-      title: 'Web Development',
-      desc: 'Building high-performance, robust web architectures leveraging scalable databases, modern API endpoints, and clean security layers.',
-      tag: 'FULLSTACK_SYSTEMS',
+      icon: <Terminal size={26} />, // Menggunakan ikon Terminal untuk VS Code
+      title: 'Visual Studio Code',
+      desc: 'Writing clean, efficient code using an optimized text editor packed with custom extensions, linting, and integrated terminal workflows.',
+      tag: 'CODE_WORKSPACE',
+      colorClass: 'text-blueGlow border-blueGlow/10 hover:border-blueGlow/40 hover:shadow-neon-blue',
+    },
+    {
+      icon: <PenTool size={26} />, // Menggunakan ikon PenTool untuk Figma
+      title: 'Figma',
+      desc: 'Creating interactive user interface prototypes, component libraries, and collaborative design assets with absolute pixel-precision.',
+      tag: 'INTERFACE_PROTOTYPING',
+      colorClass: 'text-accent border-accent/10 hover:border-accent/40 hover:shadow-neon-pink',
+    },
+    {
+      icon: <Smartphone size={26} />, // Menggunakan ikon Smartphone untuk Android Studio
+      title: 'Android Studio',
+      desc: 'Compiling, debugging, and building native Android environments with robust emulator testing and Gradle build systems.',
+      tag: 'MOBILE_COMPILATION',
       colorClass: 'text-cyanGlow border-cyanGlow/10 hover:border-cyanGlow/40 hover:shadow-neon-cyan',
     },
     {
-      icon: <LayoutGrid size={26} />,
-      title: 'Frontend Engineering',
-      desc: 'Developing pixel-perfect responsive layouts with highly complex component interactions, smooth state managements, and advanced animation sets.',
-      tag: 'INTERACTIVE_ENGINE',
+      icon: <Sparkles size={26} />, // Menggunakan ikon Sparkles untuk Canva
+      title: 'Canva',
+      desc: 'Generating fast marketing collaterals, social media assets, and vector layouts to support quick brand presentations.',
+      tag: 'GRAPHIC_PRODUCTION',
       colorClass: 'text-neonPurple border-neonPurple/10 hover:border-neonPurple/40 hover:shadow-neon-purple',
     },
-    {
-      icon: <PenTool size={26} />,
-      title: 'UI/UX Creative Design',
-      desc: 'Designing innovative modern aesthetic mockups, brand guidelines, and high-fidelity user workflows using Figma wireframing.',
-      tag: 'CREATIVE_AESTHETICS',
-      colorClass: 'text-accent border-accent/10 hover:border-accent/40 hover:shadow-neon-pink',
+        {
+      icon: <GitBranch size={26} />, // Menggunakan ikon GitBranch untuk Github/Version Control
+      title: 'GitHub',
+      desc: 'Managing remote repositories, tracking version histories, and automating continuous integration pipelines through collaborative workflows.',
+      tag: 'VERSION_CONTROL',
+      colorClass: 'text-neonPurple border-neonPurple/10 hover:border-neonPurple/40 hover:shadow-neon-purple', // GitHub identik dengan warna ungu gelap/neon
     },
+    {
+      icon: <Server size={26} />, // Menggunakan ikon Server untuk Laragon
+      title: 'Laragon',
+      desc: 'Provisioning fast, isolated local server environments with automated virtual hosts, optimized for database management and rapid PHP testing.',
+      tag: 'LOCAL_ENVIRONMENT',
+      colorClass: 'text-cyanGlow border-cyanGlow/10 hover:border-cyanGlow/40 hover:shadow-neon-cyan', // Laragon identik dengan warna biru/cyan
+    },
+
+
   ];
 
   return (
     <section 
-      id="services" 
+      id="software-skills" 
       className="py-32 px-6 bg-pitchBlack relative overflow-hidden"
     >
       <div className="absolute top-[40%] left-[10%] w-[450px] h-[450px] bg-cyanGlow/5 rounded-full blur-[140px] pointer-events-none animate-pulse-slow" />
@@ -48,10 +71,10 @@ const Services: React.FC = () => {
         {/* Section Heading */}
         <div className="mb-24 text-center">
           <span className="font-mono text-xs text-neonPurple tracking-widest uppercase font-bold mb-3 block animate-pulse">
-            [// ENABLING MODULE CAPABILITIES...]
+            [// ENABLING SOFTWARE SKILLS...]
           </span>
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-softWhite uppercase">
-            SERVICES & <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonPurple to-accent">CAPABILITIES</span>
+            SOFTWARE <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonPurple to-accent">SKILLS</span>
           </h2>
         </div>
 

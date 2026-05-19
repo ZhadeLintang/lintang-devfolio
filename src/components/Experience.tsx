@@ -15,33 +15,33 @@ const Experience: React.FC = () => {
   const events: Event[] = [
     {
       type: 'work',
-      title: 'Freelance Fullstack Developer',
-      subtitle: 'Self-Employed',
-      date: '2026 - PRESENT',
-      location: 'Remote',
-      desc: 'Developing high-end responsive landing pages, cybernetic POS tools, and premium web architectures for modern businesses.',
+      title: 'MI ALAM ROBBANI',
+      subtitle: 'Mi Alam Robbani',
+      date: '2014 - 2020',
+      location: 'Bekasi, ID',
+      desc: '',
     },
     {
       type: 'education',
-      title: 'Rekayasa Perangkat Lunak (RPL)',
-      subtitle: 'SMK Prestasi Prima',
-      date: '2024 - 2027',
-      location: 'Jakarta Timur, ID',
-      desc: 'Majoring in Software Engineering. Gaining expert hands-on commands over algorithms, fullstack database integrations, and systems UI.',
-    },
-    {
-      type: 'education',
-      title: 'Junior High School Study',
+      title: 'SMP WALISONGO',
       subtitle: 'SMP Walisongo',
       date: '2020 - 2024',
       location: 'Bekasi, ID',
-      desc: 'Completed primary junior high curriculum. Active student body leadership and technical club participation.',
+      desc: '',
+    },
+    {
+      type: 'education',
+      title: 'SMK PRESTASI PRIMMAy',
+      subtitle: 'PPLG (Pengembangang Perangkat Lunak dan Gim',
+      date: '2024 - 2027',
+      location: 'Jakarta Timur, ID',
+      desc: 'Mempelajari Dasar Pemrograman, basis data, dan pengembangan perangkat lunak.',
     },
   ];
 
   return (
     <section 
-      id="experience" 
+      id="education" 
       className="py-32 px-6 bg-pitchBlack relative overflow-hidden"
     >
       <div className="absolute top-[20%] left-[5%] w-[400px] h-[400px] bg-cyanGlow/5 rounded-full blur-[120px] pointer-events-none" />
@@ -52,10 +52,10 @@ const Experience: React.FC = () => {
         {/* Section Heading */}
         <div className="mb-24 text-center">
           <span className="font-mono text-xs text-cyanGlow tracking-widest uppercase font-bold mb-3 block animate-pulse">
-            [// CONNECTING SYSTEM JOURNALS...]
+            [// CONNECTING ACADEMIC RECORDS...]
           </span>
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-softWhite uppercase">
-            EXPERIENCE & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyanGlow to-neonPurple">TIMELINE</span>
+            ACADEMIC <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyanGlow to-neonPurple">EDUCATION</span>
           </h2>
         </div>
 
