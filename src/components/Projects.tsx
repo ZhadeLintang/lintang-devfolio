@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
       title: 'Lumina-Gallery',
       desc: 'Premium digital photography gallery featuring stateful masonry layouts, comment systems, and direct Supabase database integrations.',
       tech: ['React', 'TypeScript', 'Tailwind', 'Supabase'],
-      image: '/public/img/lumina-gallery.jpeg',
+      image: 'img/lumina-gallery.jpeg',
       live: 'https://labib.pplg1.my.id/',
       github: 'https://github.com/ZhadeLintang/lumina-gallery',
       accentClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan text-cyanGlow',
@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
                 <div className="relative aspect-[16/9] border border-white/10 rounded-xl overflow-hidden mb-6 group">
                   <div className="absolute inset-0 bg-pitchBlack/50 group-hover:bg-pitchBlack/20 transition-all duration-300 z-10" />
                   <img 
-                    src={project.image} 
+                    src={`${import.meta.env.BASE_URL}${project.image}`} 
                     alt={project.title} 
                     className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-700"
                     onError={(e) => {
