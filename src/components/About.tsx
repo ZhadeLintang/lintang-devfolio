@@ -136,7 +136,7 @@ const About: React.FC = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-cyanGlow/20 via-neonPurple/10 to-transparent z-10 pointer-events-none group-hover:opacity-0 transition-opacity duration-300" />
               <img 
-                src="/img/profile-lintang.jpeg" 
+                src="img/profile-lintang.jpeg" 
                 alt="Lintang Profile" 
                 className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500 filter brightness-90 contrast-105"
               />
