@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { LayoutGrid, Cpu, PenTool, ArrowUpRight, Terminal, Smartphone, Sparkles, GitBranch, Server } from 'lucide-react';
+import { PenTool, ArrowUpRight, Terminal, Smartphone, Sparkles, GitBranch, Server } from 'lucide-react';
 
 interface Service {
   icon: React.ReactNode;

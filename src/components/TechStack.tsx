@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Cpu, Code2, Database, Layout, PenTool, Sparkles, Terminal, Smartphone, Code, Paintbrush, Server } from 'lucide-react';
+import { ShieldCheck, Cpu, Code2, Database, Layout, PenTool, Smartphone, Code, Paintbrush, Server } from 'lucide-react';
 
 interface TechItem {
   name: string;
