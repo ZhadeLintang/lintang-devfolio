@@ -1,11 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { ShieldCheck, Award, Zap, Code2, Users } from 'lucide-react';
+import { ShieldCheck, Award, Zap, Code2 } from 'lucide-react';
 
 const About: React.FC = () => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
+  const [inView, setInView] = useState(false);
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
 
   const [experienceCount, setExperienceCount] = useState(0);
   const [projectCount, setProjectCount] = useState(0);
@@ -52,7 +68,7 @@ const About: React.FC = () => {
     <section 
       id="about" 
       className="py-32 px-6 bg-pitchBlack relative overflow-hidden"
-      ref={ref}
+      ref={elementRef}
     >
       {/* Background gradients */}
       <div className="absolute top-[10%] left-[5%] w-[400px] h-[400px] rounded-full bg-neonPurple/5 blur-[120px] pointer-events-none" />

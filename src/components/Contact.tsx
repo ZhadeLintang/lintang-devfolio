@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { Send, Github, Instagram, Linkedin, Mail, Sparkles, Terminal } from 'lucide-react';
 
 const Contact: React.FC = () => {

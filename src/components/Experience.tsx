@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar, GraduationCap, MapPin } from 'lucide-react';
+import { Briefcase, GraduationCap, MapPin } from 'lucide-react';
 
 interface Event {
   type: 'work' | 'education';
