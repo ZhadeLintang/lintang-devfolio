@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
-import { Github, Instagram, MessageCircle, ExternalLink, ArrowRight, Code2, PenTool, Database, Layout, Menu, X, Terminal, Coffee, Sparkles, Download, Linkedin, User, Calendar, Mail, FileText, Moon, Sun, Award } from 'lucide-react';
+import { Github, Instagram, MessageCircle, ExternalLink, ArrowRight, Code2, PenTool, Menu, X, Sparkles, Download, Linkedin, User, Calendar, Mail, Moon, Sun, Award } from 'lucide-react';
 import Certificate from './Certificate';
 
 const Cursor = () => {
@@ -158,7 +158,7 @@ const Hero = () => {
 
   {/* DOWNLOAD CV BUTTON */}
   <a
-    href="/public/img/cv/lintang-cv.pdf"
+    href="/img/cv/lintang-cv.pdf"
     download
     className="
       brutal-button
@@ -670,7 +670,7 @@ const CV = ({ onViewCertificate }: { onViewCertificate: () => void }) => {
 
   {/* DOWNLOAD CV BUTTON */}
   <a
-    href="/public/img/cv/lintang-cv.pdf"
+    href="/img/cv/lintang-cv.pdf"
     download
     className="
       brutal-button
@@ -696,10 +696,8 @@ const CV = ({ onViewCertificate }: { onViewCertificate: () => void }) => {
   </a>
 
   {/* VIEW CERTIFICATE BUTTON */}
-  <a
-    href="/public/sertifikat/sertifikat.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
+  <button
+    onClick={onViewCertificate}
     className="
       brutal-button
       bg-accent
@@ -721,7 +719,7 @@ const CV = ({ onViewCertificate }: { onViewCertificate: () => void }) => {
   >
     <Award size={28} />
     VIEW SERTIFIKAT
-  </a>
+  </button>
 
 </div>
         </div>
