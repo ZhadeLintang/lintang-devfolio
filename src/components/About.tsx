@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { ShieldCheck, Award, Zap, Code2, Github, Instagram, Mail } from 'lucide-react';
+import { Github, Instagram, Mail } from 'lucide-react';
 
 const About: React.FC = () => {
   const controls = useAnimation();
@@ -34,12 +34,7 @@ const About: React.FC = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } }
   };
 
-  const bioBullets = [
-    { icon: <Code2 size={18} className="text-cyanGlow" />, text: 'Proficient in modern fullstack ecosystems (React/Next.js, Laravel, Node.js).' },
-    { icon: <ShieldCheck size={18} className="text-neonPurple" />, text: 'Active student majoring in Software Engineering (SMK Prestasi Prima, Jakarta).' },
-    { icon: <Award size={18} className="text-accent" />, text: 'High emphasis on creating premium, interactive design layouts (Neo Brutalism & Glassmorphism).' },
-    { icon: <Zap size={18} className="text-cyanGlow" />, text: 'Proven experience building functional cyber inventory POS & fullstack database managers.' }
-  ];
+
 
   return (
     <section 
@@ -80,7 +75,7 @@ const About: React.FC = () => {
               </div>
 
               <h3 className="text-2xl md:text-3xl font-black text-softWhite mb-6 leading-tight">
-                Labib Lintang Habibie
+                Labib Lintang H
               </h3>
               
               <p className="text-mutedGray text-base md:text-lg leading-relaxed mb-8">
@@ -88,16 +83,34 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            {/* Bullet points grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-white/5">
-              {bioBullets.map((bullet, idx) => (
-                <div key={idx} className="flex gap-3 items-start">
-                  <div className="p-1 rounded bg-white/5 shrink-0 mt-0.5 border border-white/10">
-                    {bullet.icon}
-                  </div>
-                  <p className="text-sm text-mutedGray/90 font-medium leading-normal">{bullet.text}</p>
-                </div>
-              ))}
+            {/* Cyber Profile Metadata List */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-white/5 font-mono text-xs text-mutedGray">
+              <div className="flex items-center gap-3 border border-white/5 bg-white/5 p-3 rounded-lg hover:border-cyanGlow/30 transition-colors">
+                <span className="text-cyanGlow font-bold">NAMA:</span>
+                <span className="text-softWhite font-semibold">Labib Lintang H</span>
+              </div>
+              <div className="flex items-center gap-3 border border-white/5 bg-white/5 p-3 rounded-lg hover:border-neonPurple/30 transition-colors">
+                <span className="text-neonPurple font-bold">TTL:</span>
+                <span className="text-softWhite font-semibold">Jakarta, 25 Oktober 2005</span>
+              </div>
+              <a 
+                href="mailto:lintangzhade2525@gmail.com" 
+                className="flex items-center gap-3 border border-white/5 bg-white/5 p-3 rounded-lg hover:border-accent/40 hover:text-softWhite transition-colors"
+                data-cursor="hover"
+              >
+                <span className="text-accent font-bold">EMAIL:</span>
+                <span className="text-softWhite font-semibold">lintangzhade2525@gmail.com</span>
+              </a>
+              <a 
+                href="https://github.com/ZhadeLintang" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-3 border border-white/5 bg-white/5 p-3 rounded-lg hover:border-cyanGlow/40 hover:text-softWhite transition-colors"
+                data-cursor="hover"
+              >
+                <span className="text-cyanGlow font-bold">GITHUB:</span>
+                <span className="text-softWhite font-semibold">ZhadeLintang</span>
+              </a>
             </div>
           </motion.div>
 
