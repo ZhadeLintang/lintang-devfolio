@@ -14,28 +14,28 @@ interface TechItem {
 const TechStack: React.FC = () => {
   const techs: TechItem[] = [
     { 
-      name: 'React', 
+      name: 'React TypeScrip', 
       category: 'Frontend', 
       icon: <Layout size={24} />, 
       color: 'text-cyanGlow border-cyanGlow/20', 
       glowClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan',
-      level: 95
+      level: 100
     },
     { 
-      name: 'TypeScript', 
+      name: 'Tailwind CSS', 
       category: 'Language', 
       icon: <Code2 size={24} />, 
       color: 'text-secondary border-secondary/20', 
       glowClass: 'hover:border-secondary/50 hover:shadow-neon-cyan',
-      level: 90
+      level: 100
     },
     { 
-      name: 'Tailwind CSS', 
+      name: 'Laravel', 
       category: 'Styling', 
       icon: <Cpu size={24} />, 
       color: 'text-cyanGlow border-cyanGlow/20', 
       glowClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan',
-      level: 98
+      level: 95
     },
     { 
       name: 'Node.js', 
@@ -46,12 +46,12 @@ const TechStack: React.FC = () => {
       level: 85
     },
     { 
-      name: 'Express', 
+      name: 'PHP Native', 
       category: 'Backend', 
       icon: <Database size={24} />, 
       color: 'text-neonPurple border-neonPurple/20', 
       glowClass: 'hover:border-neonPurple/50 hover:shadow-neon-purple',
-      level: 80
+      level: 90
     },
     { 
       name: 'Supabase', 
@@ -59,7 +59,7 @@ const TechStack: React.FC = () => {
       icon: <ShieldCheck size={24} />, 
       color: 'text-accent border-accent/20', 
       glowClass: 'hover:border-accent/50 hover:shadow-neon-pink',
-      level: 88
+      level: 95
     },
     { 
       name: 'Figma', 
@@ -70,12 +70,12 @@ const TechStack: React.FC = () => {
       level: 85
     },
     { 
-      name: 'Framer Motion', 
+      name: 'Android Studio', 
       category: 'Animation', 
       icon: <Sparkles size={24} />, 
       color: 'text-cyanGlow border-cyanGlow/20', 
       glowClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan',
-      level: 92
+      level: 80
     },
   ];
 
