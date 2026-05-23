@@ -18,9 +18,9 @@ const Projects: React.FC = () => {
       title: 'Lumina-Gallery',
       desc: 'Premium digital photography gallery featuring stateful masonry layouts, comment systems, and direct Supabase database integrations.',
       tech: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
-      image: 'img/lumina-gallery.jpeg',
-      live: 'https://labib.pplg1.my.id/',
-      github: 'https://github.com/ZhadeLintang/lumina-gallery',
+      image: 'img/lumaro-gallery.jpeg',
+      live: 'https://lintang.pplg1.my.id/',
+      github: 'https://github.com/ZhadeLintang/velora',
       accentClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan text-cyanGlow',
     },
     {
