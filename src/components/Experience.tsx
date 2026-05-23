@@ -32,7 +32,7 @@ const Experience: React.FC = () => {
     {
       type: 'education',
       title: 'SMK PRESTASI PRIMA',
-      subtitle: 'PPLG (Pengembangang Perangkat Lunak dan Gim',
+      subtitle: 'PPLG (Pengembangang Perangkat Lunak dan Gim)',
       date: '2024 - 2027',
       location: 'Jakarta Timur, ID',
       desc: 'Mempelajari Dasar Pemrograman, basis data, dan pengembangan perangkat lunak.',
