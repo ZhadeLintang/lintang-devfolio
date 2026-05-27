@@ -15,7 +15,7 @@ interface Project {
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: 'Lumina-Gallery',
+      title: 'Lumaro-Gallery',
       desc: 'Premium digital photography gallery featuring stateful masonry layouts, comment systems, and direct Supabase database integrations.',
       tech: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
       image: 'img/lumaro-gallery.jpeg',
@@ -42,12 +42,12 @@ const Projects: React.FC = () => {
       accentClass: 'hover:border-accent/50 hover:shadow-neon-pink text-accent',
     },
     {
-      title: 'Smart School',
-      desc: 'A custom personal log tool leveraging local location services, trip logs, and clean data visualizations.',
-      tech: ['React TypeScript', 'Tailwind'],
-      image: 'img/SPP.png',
-      live: '',
-      github: 'https://github.com/ZhadeLintang',
+      title: 'Portofolio-Me',
+      desc: 'A sleek, modern personal portfolio website built to showcase my development skills, professional UI designs, and digital projects.',
+      tech: ['HTML', 'CSS', 'JavaScript'],
+      image: 'img/portofolio-lintang.jpeg',
+      live: 'https://portofolio-me-six.vercel.app/',
+      github: 'https://github.com/ZhadeLintang/portofolio-me',
       accentClass: 'hover:border-cyanGlow/50 hover:shadow-neon-cyan text-cyanGlow',
     },
   ];
